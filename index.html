@@ -7,16 +7,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <canvas id="confetti"></canvas>
   <main>
     <h1>Connect 4</h1>
-    <label>Mode:
-      <select id="mode">
+    <div class="controls">
+      <select id="mode" aria-label="Game mode">
         <option value="2p">2 Players</option>
         <option value="easy">vs Computer (Easy)</option>
         <option value="hard">vs Computer (Hard)</option>
       </select>
-    </label>
-    <p id="scores"></p>
+      <button id="theme" class="ghost-btn" title="Change theme">🎨 Theme</button>
+      <button id="sound" class="ghost-btn" title="Sound on/off">🔊</button>
+    </div>
+    <div id="scores"></div>
     <p id="status"></p>
     <div id="board" role="grid" aria-label="Connect 4 board"></div>
     <button id="restart">Restart</button>

@@ -31,6 +31,10 @@ A two-player Connect 4 game that runs in the browser, built with plain HTML, CSS
 - **Score counter** across rounds (resets when you change mode)
 - **Hover preview:** a faded disc shows where yours will land
 - **Drop animation:** discs fall into place
+- **Visual polish:** gradient background, glossy discs, glowing board, landing bounce
+- **3 themes:** Classic, Neon, Sunset (saved between visits)
+- **Sound effects:** drop, win, lose, draw (generated in the browser, with a mute button)
+- **Confetti** celebration when you win
 
 ## Run Locally
 

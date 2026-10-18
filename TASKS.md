@@ -29,3 +29,12 @@
 - Switch mode: score resets
 - Easy AI plays random moves; Hard AI blocks your three-in-a-row and takes its own wins
 - Clicking during "Computer is thinking..." does nothing
+
+## v3: Polish and effects
+- [x] 19. Restyle with CSS variables and 3 themes
+- [x] 20. Glossy discs, glowing board, landing bounce
+- [x] 21. Sound effects with Web Audio (`tone()`, `sfx`)
+- [x] 22. Mute button and theme button (saved with localStorage)
+- [x] 23. Confetti on win (`confetti()` on a canvas)
+- [ ] 24. Manual test v3: try all themes, mute and unmute, win by each player, phone screen
+- [ ] 25. Push and confirm Vercel redeploys

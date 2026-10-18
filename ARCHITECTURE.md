@@ -19,3 +19,8 @@ connect4/
 
 ## Data Flow
 Click column -> `dropDisc(col)` updates state -> `checkWin()` -> `render()` updates the DOM.
+
+## v3 Additions
+- Sound uses the browser's Web Audio API, so no audio files are needed.
+- Confetti is drawn on a full-screen `<canvas id="confetti">` with plain JavaScript.
+- Theme and mute settings are saved with `localStorage` (wrapped in try/catch).

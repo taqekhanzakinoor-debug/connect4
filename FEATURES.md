@@ -18,3 +18,12 @@
 
 ## Later
 - Sound effects, online multiplayer, choose who goes first
+
+## Added in v3 (done)
+- Visual polish: gradient background, glossy discs, glass-style controls, glowing board on win
+- 3 colour themes (Classic, Neon, Sunset), remembered between visits
+- Sound effects built with the Web Audio API (drop thud, win jingle, lose tone, draw tone, button click)
+- Sound on/off button, remembered between visits
+- Confetti on a win (not when the computer wins)
+- Bounce when a disc lands, glowing turn indicator
+- Respects "reduce motion" accessibility setting
