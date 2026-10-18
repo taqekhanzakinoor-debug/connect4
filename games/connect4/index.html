@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connect 4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+  <main>
+    <a class="back" href="../../index.html">← Game Hub</a>
+    <h1>Connect 4</h1>
+    <div class="controls">
+      <select id="mode" aria-label="Game mode">
+        <option value="2p">2 Players</option>
+        <option value="easy">vs Computer (Easy)</option>
+        <option value="hard">vs Computer (Hard)</option>
+      </select>
+      <button id="theme" class="ghost-btn" title="Change theme">🎨 Theme</button>
+      <button id="sound" class="ghost-btn" title="Sound on/off">🔊</button>
+    </div>
+    <div id="scores"></div>
+    <p id="status"></p>
+    <div id="board" role="grid" aria-label="Connect 4 board"></div>
+    <button id="restart">Restart</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

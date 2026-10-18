@@ -7,7 +7,19 @@ A two-player Connect 4 game that runs in the browser, built with plain HTML, CSS
 
 ---
 
-## How to Play
+## Game Hub
+
+The project is now a **Board Game Hub**. Open `index.html` to see the games:
+
+| Game | Status |
+|------|--------|
+| Connect 4 | Playable |
+| Tic-Tac-Toe | Playable (Easy and Unbeatable AI) |
+| Othello, Gomoku, Checkers, Chess | Coming soon |
+
+**New folder layout:** the home page is `index.html` in the root. Connect 4's files moved to `games/connect4/`, Tic-Tac-Toe lives in `games/tictactoe/`, and shared code (themes, sounds, confetti) is in `shared/`.
+
+## How to Play (Connect 4)
 
 1. Red goes first. Click any column to drop your disc into it.
 2. Discs fall to the lowest empty spot in the column.

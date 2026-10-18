@@ -16,3 +16,6 @@ Friends playing together on one screen; beginners learning the vibe-coding workf
 
 ## Out of Scope
 Online multiplayer, accounts, sound. (AI opponent was added in v2.)
+
+## v4: Board Game Hub
+The project grew from one game into a **Board Game Hub** with six classic games: Connect 4, Tic-Tac-Toe, Othello, Checkers, Gomoku, and Chess. Each has 2-player mode and a computer opponent. A home page lists all games.

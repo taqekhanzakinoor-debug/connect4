@@ -27,3 +27,16 @@
 - Confetti on a win (not when the computer wins)
 - Bounce when a disc lands, glowing turn indicator
 - Respects "reduce motion" accessibility setting
+
+## v4: Game Hub
+| Game | Status | Computer opponent |
+|------|--------|-------------------|
+| Connect 4 | Done | Easy / Hard (minimax depth 4) |
+| Tic-Tac-Toe | Done (batch 1) | Easy / Unbeatable (full minimax) |
+| Othello | Planned (batch 2) | Planned |
+| Gomoku | Planned (batch 2) | Planned |
+| Checkers | Planned (batch 3) | Planned |
+| Chess | Planned (batch 4) | Planned |
+
+- Hub home page with a card for each game ("Coming soon" for unfinished ones)
+- Shared theme, sound, and confetti code used by every new game

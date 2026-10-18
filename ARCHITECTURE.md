@@ -24,3 +24,18 @@ Click column -> `dropDisc(col)` updates state -> `checkWin()` -> `render()` upda
 - Sound uses the browser's Web Audio API, so no audio files are needed.
 - Confetti is drawn on a full-screen `<canvas id="confetti">` with plain JavaScript.
 - Theme and mute settings are saved with `localStorage` (wrapped in try/catch).
+
+## v4: Hub Structure
+```
+connect4/
+├── index.html          (hub home page)
+├── hub.css / hub.js    (game cards)
+├── shared/
+│   ├── common.css      (themes + base look)
+│   └── common.js       (sound, confetti, theme: exposes window.Hub)
+└── games/
+    ├── connect4/       (index.html, style.css, script.js)
+    └── tictactoe/      (index.html, style.css, script.js)
+```
+Each game is a self-contained folder that loads the shared files. New games only need a folder and one line in `hub.js`.
+Connect 4 still has its own copy of the sound and theme code. Moving it onto `shared/` is a planned cleanup.

@@ -38,3 +38,14 @@
 - [x] 23. Confetti on win (`confetti()` on a canvas)
 - [ ] 24. Manual test v3: try all themes, mute and unmute, win by each player, phone screen
 - [ ] 25. Push and confirm Vercel redeploys
+
+## v4: Game Hub
+- [x] 26. Restructure into `games/` and `shared/` folders
+- [x] 27. Build hub home page (`index.html`, `hub.js`, `hub.css`)
+- [x] 28. Move Connect 4 into `games/connect4/` with a back link
+- [x] 29. Build Tic-Tac-Toe with Easy and Unbeatable AI
+- [ ] 30. Test batch 1 and push
+- [ ] 31. Batch 2: Othello and Gomoku
+- [ ] 32. Batch 3: Checkers
+- [ ] 33. Batch 4: Chess
+- [ ] 34. Move Connect 4 onto `shared/` code

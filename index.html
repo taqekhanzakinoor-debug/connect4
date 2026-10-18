@@ -3,27 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Connect 4</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Board Game Hub</title>
+  <link rel="stylesheet" href="shared/common.css">
+  <link rel="stylesheet" href="hub.css">
 </head>
 <body>
-  <canvas id="confetti"></canvas>
   <main>
-    <h1>Connect 4</h1>
+    <h1>Board Game Hub</h1>
+    <p class="sub">Six classic games. Play with a friend or against the computer.</p>
     <div class="controls">
-      <select id="mode" aria-label="Game mode">
-        <option value="2p">2 Players</option>
-        <option value="easy">vs Computer (Easy)</option>
-        <option value="hard">vs Computer (Hard)</option>
-      </select>
-      <button id="theme" class="ghost-btn" title="Change theme">🎨 Theme</button>
-      <button id="sound" class="ghost-btn" title="Sound on/off">🔊</button>
+      <button id="theme" class="ghost-btn">🎨 Theme</button>
+      <button id="sound" class="ghost-btn">🔊</button>
     </div>
-    <div id="scores"></div>
-    <p id="status"></p>
-    <div id="board" role="grid" aria-label="Connect 4 board"></div>
-    <button id="restart">Restart</button>
+    <div class="grid" id="games"></div>
   </main>
-  <script src="script.js"></script>
+  <script src="shared/common.js"></script>
+  <script src="hub.js"></script>
 </body>
 </html>
