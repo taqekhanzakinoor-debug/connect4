@@ -15,7 +15,10 @@ The project is now a **Board Game Hub**. Open `index.html` to see the games:
 |------|--------|
 | Connect 4 | Playable |
 | Tic-Tac-Toe | Playable (Easy and Unbeatable AI) |
-| Othello, Gomoku, Checkers, Chess | Coming soon |
+| Othello | Playable (Easy and Hard AI) |
+| Checkers | Playable (forced captures, multi-jumps, kings) |
+| Gomoku | Playable (five in a row) |
+| Chess | Playable (check, checkmate, stalemate; no castling or en passant yet) |
 
 **New folder layout:** the home page is `index.html` in the root. Connect 4's files moved to `games/connect4/`, Tic-Tac-Toe lives in `games/tictactoe/`, and shared code (themes, sounds, confetti) is in `shared/`.
 

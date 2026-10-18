@@ -39,3 +39,6 @@ connect4/
 ```
 Each game is a self-contained folder that loads the shared files. New games only need a folder and one line in `hub.js`.
 Connect 4 still has its own copy of the sound and theme code. Moving it onto `shared/` is a planned cleanup.
+
+## v5: Shared Board Engine
+`shared/board.js` runs any board game. Each game (`games/<name>/script.js`) supplies a rules object `G` with `init`, `moves`, `apply`, `result`, `eval`, and `glyph`. The engine handles clicks, turns, scores, sounds, the status text, and the computer player (minimax with alpha-beta pruning, or a custom `ai` for Gomoku). Adding a new game means writing only its rules.

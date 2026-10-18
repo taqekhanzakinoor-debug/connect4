@@ -44,8 +44,11 @@
 - [x] 27. Build hub home page (`index.html`, `hub.js`, `hub.css`)
 - [x] 28. Move Connect 4 into `games/connect4/` with a back link
 - [x] 29. Build Tic-Tac-Toe with Easy and Unbeatable AI
-- [ ] 30. Test batch 1 and push
-- [ ] 31. Batch 2: Othello and Gomoku
-- [ ] 32. Batch 3: Checkers
-- [ ] 33. Batch 4: Chess
+- [x] 30. Test batch 1 and push
+- [x] 31. Batch 2: Othello and Gomoku
+- [x] 32. Batch 3: Checkers
+- [x] 33. Batch 4: Chess
 - [ ] 34. Move Connect 4 onto `shared/` code
+
+- [ ] 35. Test every game in the browser and push
+- [ ] 36. Add castling and en passant to Chess

@@ -33,10 +33,14 @@
 |------|--------|-------------------|
 | Connect 4 | Done | Easy / Hard (minimax depth 4) |
 | Tic-Tac-Toe | Done (batch 1) | Easy / Unbeatable (full minimax) |
-| Othello | Planned (batch 2) | Planned |
-| Gomoku | Planned (batch 2) | Planned |
-| Checkers | Planned (batch 3) | Planned |
-| Chess | Planned (batch 4) | Planned |
+| Othello | Done | Easy / Hard |
+| Gomoku | Done | Easy / Hard |
+| Checkers | Done | Easy / Hard |
+| Chess | Done | Easy / Hard |
 
 - Hub home page with a card for each game ("Coming soon" for unfinished ones)
 - Shared theme, sound, and confetti code used by every new game
+
+### Chess rules included / not included
+Included: all piece moves, check, checkmate, stalemate, auto-queen promotion.
+Not included yet: castling, en passant, choosing a promotion piece, 50-move and repetition draws.
