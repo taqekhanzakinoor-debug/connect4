@@ -44,3 +44,8 @@
 ### Chess rules included / not included
 Included: all piece moves, check, checkmate, stalemate, auto-queen promotion.
 Not included yet: castling, en passant, choosing a promotion piece, 50-move and repetition draws.
+
+## v6: In-game instructions
+- Every game has a **❓ How to Play** button with the goal, rules, tips, and a note on the game modes.
+- The popup opens automatically the first time you visit each game, then only when you click the button.
+- Close it with Got it!, a click outside the box, or the Esc key.

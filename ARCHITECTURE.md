@@ -42,3 +42,6 @@ Connect 4 still has its own copy of the sound and theme code. Moving it onto `sh
 
 ## v5: Shared Board Engine
 `shared/board.js` runs any board game. Each game (`games/<name>/script.js`) supplies a rules object `G` with `init`, `moves`, `apply`, `result`, `eval`, and `glyph`. The engine handles clicks, turns, scores, sounds, the status text, and the computer player (minimax with alpha-beta pruning, or a custom `ai` for Gomoku). Adding a new game means writing only its rules.
+
+## v6: Help popup
+`shared/help.js` holds the instructions for all six games in one object. It reads the game's folder name from the URL, adds the button to the controls bar, and builds the popup. Adding a new game means adding one entry to that object.

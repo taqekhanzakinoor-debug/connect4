@@ -27,3 +27,7 @@ One screen: title, status line ("Red's turn"), board, Restart button.
 - Discs have a highlight; they bounce when they land; the board glows on a win
 - Sounds: drop thud, win jingle, lose tone, draw tone. Mute button saves your choice.
 - Confetti plays when a human wins. Animations shrink for users who prefer reduced motion.
+
+## v6 Additions
+- **❓ How to Play** button next to the theme and sound buttons on every game page.
+- A centered popup with the goal, numbered rules, tips, and the mode explanation. It opens on a player's first visit to each game.

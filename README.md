@@ -22,6 +22,10 @@ The project is now a **Board Game Hub**. Open `index.html` to see the games:
 
 **New folder layout:** the home page is `index.html` in the root. Connect 4's files moved to `games/connect4/`, Tic-Tac-Toe lives in `games/tictactoe/`, and shared code (themes, sounds, confetti) is in `shared/`.
 
+## In-game instructions
+
+Every game has a **❓ How to Play** button that explains the goal, rules, and tips. It opens automatically the first time you visit a game.
+
 ## How to Play (Connect 4)
 
 1. Red goes first. Click any column to drop your disc into it.

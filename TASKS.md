@@ -52,3 +52,8 @@
 
 - [ ] 35. Test every game in the browser and push
 - [ ] 36. Add castling and en passant to Chess
+
+## v6: Instructions
+- [x] 37. Write `shared/help.js` with the rules text for all six games
+- [x] 38. Add the How to Play button and popup to every game page
+- [ ] 39. Read each game's instructions in the browser and check they match how the game really plays
