@@ -1,18 +1,31 @@
 # Tasks
 
+## v1: Core game
 - [x] 1. Write all planning docs
 - [x] 2. Create `index.html` skeleton
 - [x] 3. Style board and discs in `style.css`
-- [x] 4. Create state + `init()` + `render()`
+- [x] 4. Create state, `init()` and `render()`
 - [x] 5. Implement `dropDisc()` with gravity
-- [x] 6. Implement `checkWin()` and draw check
+- [x] 6. Implement win and draw checks
 - [x] 7. Add restart button and status text
 - [x] 8. Highlight winning discs
-- [ ] 9. Manual test (see below)
-- [ ] 10. Push to GitHub
+- [x] 9. Manual test
+- [x] 10. Push to GitHub and deploy on Vercel
 
-## Manual Tests
-- Win horizontally, vertically, and both diagonals
-- Fill a column and click it again
-- Fill the board for a draw
-- Restart mid-game
+## v2: Upgrades
+- [x] 11. Add score counter (`scores` object, shown above the board)
+- [x] 12. Add hover preview (`updateGhost()`)
+- [x] 13. Add drop animation (CSS keyframes + `--drop` variable)
+- [x] 14. Add mode selector in `index.html`
+- [x] 15. Add Easy AI (random column)
+- [x] 16. Add Hard AI (minimax + alpha-beta, heuristic scoring)
+- [ ] 17. Manual test v2 (below)
+- [ ] 18. Push and confirm Vercel redeploys
+
+## v2 Manual Tests
+- Hover over each column: faded disc appears in the lowest empty spot
+- Discs visibly fall when placed
+- Win a round: score increases, Restart keeps the score
+- Switch mode: score resets
+- Easy AI plays random moves; Hard AI blocks your three-in-a-row and takes its own wins
+- Clicking during "Computer is thinking..." does nothing

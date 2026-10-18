@@ -15,4 +15,4 @@ Friends playing together on one screen; beginners learning the vibe-coding workf
 - The game can be restarted at any time.
 
 ## Out of Scope
-Online multiplayer, AI opponent, accounts, sound.
+Online multiplayer, accounts, sound. (AI opponent was added in v2.)

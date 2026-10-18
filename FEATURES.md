@@ -1,17 +1,20 @@
 # Features
 
-## Must Have
-- 7x6 board
-- Two players (Red, Yellow) alternate turns
+## Must Have (done)
+- 7x6 board, Red and Yellow alternate turns
 - Discs fall to the lowest empty row
-- Win detection (4 in a row, all directions)
-- Draw detection (board full)
+- Win detection (horizontal, vertical, both diagonals) and draw detection
 - Restart button
 
-## Nice to Have
-- Highlight the winning four
-- Hover preview of the column
-- Score counter across rounds
+## Added in v2 (done)
+- Single-player mode against a computer opponent
+  - Easy: picks a random valid column
+  - Hard: minimax with alpha-beta pruning (depth 4)
+- Mode selector: 2 Players / vs Computer (Easy) / vs Computer (Hard)
+- Score counter (Red, Yellow or Computer, Draws) across rounds
+- Hover preview: faded disc shows where your disc will land
+- Drop animation: discs fall into place
+- Winning four discs pulse
 
 ## Later
-- AI opponent, sound effects, online play
+- Sound effects, online multiplayer, choose who goes first

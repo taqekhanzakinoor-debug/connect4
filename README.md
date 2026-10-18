@@ -26,6 +26,11 @@ A two-player Connect 4 game that runs in the browser, built with plain HTML, CSS
 - Winning discs are highlighted
 - Restart button
 - Responsive layout that works on phones and desktops
+- **Single-player mode** with a computer opponent (Easy = random, Hard = minimax with alpha-beta pruning)
+- **Mode selector:** 2 Players, vs Computer (Easy), vs Computer (Hard)
+- **Score counter** across rounds (resets when you change mode)
+- **Hover preview:** a faded disc shows where yours will land
+- **Drop animation:** discs fall into place
 
 ## Run Locally
 
@@ -100,13 +105,19 @@ connect4/
 | `current` | The player whose turn it is (`1` or `2`) |
 | `over` | `true` once someone wins or the game is a draw |
 | `winCells` | The coordinates of the four winning discs |
+| `scores` | Win counts for Red, Yellow/Computer, and draws |
+| `lastMove` | Last disc placed (used for the drop animation) |
+| `hoverCol` | Column under the mouse (used for the preview) |
+| `busy` | True while the computer is thinking |
 
 **Main functions:**
 
 - `init()` resets the board and starts a new game.
 - `dropDisc(col)` finds the lowest empty row in the column, places the disc, checks the result, then switches turns.
 - `checkWin(r, c)` counts matching discs in four directions through the last move. Four or more means a win.
-- `render()` redraws the board and the status text from the current state.
+- `render()` redraws the board, scores, and status text from the current state.
+- `aiMove()` / `bestMove()` / `minimax()` / `heuristic()` power the computer player. Hard mode looks 4 moves ahead and prefers center columns.
+- `updateGhost()` draws the hover preview.
 
 **Flow:** click a column → `dropDisc` updates the state → `checkWin` looks for four in a row → `render` updates the screen.
 
@@ -133,13 +144,14 @@ This project follows a spec-driven "vibe coding" process:
 - [ ] Restart works in the middle of a game
 - [ ] Clicks are ignored after the game ends
 - [ ] Layout looks right on a phone-sized screen
+- [ ] Hover preview and drop animation work
+- [ ] Score updates after each round
+- [ ] Hard AI blocks a three-in-a-row and takes its own wins
 
 ## Future Improvements
 
-- Score counter across rounds
-- Hover preview of the column
-- Drop animation
-- AI opponent (single-player mode)
+- Choose who goes first
+- Adjustable AI difficulty levels
 - Sound effects
 - Online multiplayer
 

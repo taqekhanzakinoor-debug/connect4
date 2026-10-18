@@ -13,3 +13,18 @@
 - `dropDisc(col)`: place a disc, check result, switch turn
 - `checkWin(r, c)`: count in 4 directions from the last move
 - `render()`: redraw the board from state
+
+## v2 Additions
+| Variable   | Type    | Meaning                                         |
+|------------|---------|-------------------------------------------------|
+| `scores`   | object  | `{1: redWins, 2: yellowOrComputerWins, draw}`   |
+| `lastMove` | [r, c]  | Last placed disc, used for the drop animation   |
+| `hoverCol` | number  | Column under the mouse, used for the preview    |
+| `busy`     | boolean | True while the computer is "thinking"           |
+
+## v2 Functions
+- `onClick(col)`: ignores clicks when the game is over, busy, or it is the computer's turn
+- `aiMove()`: Easy picks randomly; Hard calls `bestMove()`
+- `bestMove()` / `minimax()`: look 4 moves ahead with alpha-beta pruning
+- `heuristic()`: scores the board (center control, 2-in-a-row and 3-in-a-row windows)
+- `updateGhost()`: shows the hover preview
