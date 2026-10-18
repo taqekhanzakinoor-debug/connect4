@@ -15,4 +15,4 @@ Open `index.html` in any browser. No install needed.
 `PRD.md`, `ARCHITECTURE.md`, `FEATURES.md`, `DATA_MODEL.md`, `UI_UX.md`, `TASKS.md`, `RULES.md`
 
 ## Author
-<Alauddin>, Vibe Coding Club
+   Alauddin, Vibe Coding Club
